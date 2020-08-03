@@ -11,7 +11,6 @@
         <div class="container">
             <div class="header-content">
                 <a href="">
-                    <img src="./images/logo/Logo.webp" alt="">
                     <picture>
                         <source
                             srcset="
@@ -24,11 +23,25 @@
                                     ./images/logo/logo@2x.jpg 138w"
                             sizes="69px" />
                         
-
                         <img src="./images/logo/logo.jpg" alt="Logo of the copany">
                     </picture>
                 </a>
-                <nav>
+                <button 
+                type="button" 
+                class="menu-button" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                    <svg 
+                        width="40"
+                        height="40" 
+                        aria-label="Переключатель мобильного меню" 
+                        >
+                            <use class="icon-close" href="./images/icons.svg#cross"></use>
+                            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <nav  class="menu-container" id="menu-container" data-menu>
                     <ul>
                         <li><a href="#">О нас</a></li>
                         <li><a href="#">Услуги и цены</a></li>
@@ -42,8 +55,8 @@
                 </nav>
                 <aside>
                     <ul>
-                        <li><a href="">Istagram</a></li>
-                        <li><a href="">Youtube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
                     </ul>
                 </aside>
             </div>
