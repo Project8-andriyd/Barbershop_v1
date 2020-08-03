@@ -144,6 +144,22 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 40px;
   }
 }
 
@@ -171,14 +187,18 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts-list {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -188,25 +208,15 @@ header {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 305px;
-  }
-}
-
-.border {
-  border: 1px solid #FF6C00;
-  border-radius: 25px;
-  padding: 12px 37px;
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
   }
 }
 
@@ -216,16 +226,22 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .contacts-item:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-item:not(:last-child) {
     margin-right: 40px;
   }
+}
+
+.border {
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding: 12px 37px;
 }
 
 @media screen and (max-width: 767px) {

@@ -70,6 +70,13 @@ header {
     }
     @media screen and (min-width: 768px) {
         display: flex;
+        align-items: center;
+        padding-left: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
     }
 }
 .nav-item  {
@@ -94,17 +101,21 @@ header {
         margin-right: 103px;
         margin-bottom: 64px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
-        padding-top: 21px;
-        padding-bottom: 21px;
+    @media screen and (min-width: 768px) and (max-width: 1279px)  {
+        // padding-top: 21px;
+        // padding-bottom: 21px;
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        
     }
     @media screen and (min-width: 768px) {
         margin-left: 84px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         display: flex;
-        margin-left: 305px;
+        align-items: center;
+        margin-left: auto;
     }
     // @media screen and (max-width: 767px) {
     //     a {
@@ -117,32 +128,33 @@ header {
     //     }
     // }
 }
-.border {
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    padding: 12px 37px;
-}
+
 .contacts-item {
     // width: 100%;
     // @include flex;
     // padding-top: 32px;
     // padding-bottom: 32px; 
-   
-    @media screen and (min-width: 1200px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
+
+    @media screen and (min-width: 1280px) {
+        // padding-top: 32px;
+        // padding-bottom: 32px;
     }
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
             margin-bottom: 24px;
         }
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1279px) {
             margin-bottom: 20px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             margin-right: 40px; 
         }
     }
+}
+.border {
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    padding: 12px 37px;
 }
 
 .social-list {
