@@ -50,6 +50,16 @@ ul {
   padding-left: 0;
 }
 
+.title {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
 .container {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -74,6 +84,23 @@ ul {
   }
 }
 
+.online-appointment {
+  background-color: #191c26;
+}
+
+.input-field {
+  margin-top: 44px;
+  background-color: #191c26;
+  border: transparent;
+  border-bottom: 1px solid #ffffff;
+}
+
+.label-style {
+  position: relative;
+  color: #ffffff;
+  display: block;
+}
+
 .button {
   text-decoration: none;
   font-weight: 600;
@@ -82,7 +109,7 @@ ul {
   text-align: center;
   letter-spacing: 0.09em;
   color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: #191c26;
   display: inline-block;
   border: 1px solid #ff6c00;
   border-radius: 25px;
