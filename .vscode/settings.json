@@ -16,6 +16,5 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ],
-    "liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-07"
+    ]
 }
