@@ -81,6 +81,10 @@ ul {
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 55px;
+    padding-left: 55px;
   }
 }
 
