@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop_v1</title>
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="">
-                    <img src="./images/logo/Logo.webp" alt="">
-                    <picture>
-                        <source
-                            srcset="
+      <div class="container">
+        <div class="header-content">
+          <a href="">
+            <img src="./images/logo/Logo.webp" alt="" />
+            <picture>
+              <source
+                srcset="
                                     ./images/logo/logo.webp 69w
                                     ./images/logo/logo@2x.webp 138w"
-                            type="image/webp"
-                            sizes="69px" />
-                        <source
-                            srcset="./images/logo/logo.jpg 69w, 
-                                    ./images/logo/logo@2x.jpg 138w"
-                            sizes="69px" />
-                        
+                type="image/webp"
+                sizes="69px"
+              />
+              <source
+                srcset="
+                  ./images/logo/logo.jpg     69w,
+                  ./images/logo/logo@2x.jpg 138w
+                "
+                sizes="69px"
+              />
 
-                        <img src="./images/logo/logo.jpg" alt="Logo of the copany">
-                    </picture>
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги и цены</a></li>
-                        <li><a href="#">Мастера</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                        <li><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
-                    </ul>
-                </nav>
-                <aside>
-                    <ul>
-                        <li><a href="">Istagram</a></li>
-                        <li><a href="">Youtube</a></li>
-                    </ul>
-                </aside>
-            </div>
-
+              <img src="./images/logo/logo.jpg" alt="Logo of the copany" />
+            </picture>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Услуги и цены</a></li>
+              <li><a href="#">Мастера</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <ul>
+              <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+              <li><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
+            </ul>
+          </nav>
+          <aside>
+            <ul>
+              <li><a href="">Istagram</a></li>
+              <li><a href="">Youtube</a></li>
+            </ul>
+          </aside>
         </div>
-
+      </div>
     </header>
     <script src="./js/menu.js"></script>
-</body>
+    <section class="onine-appointment">
+      <h2>Онлайн-запись</h2>
+      <form>
+        <label class="input-style">
+          <input class="input-field" type="text" name="name" placeholder=" " />
+          <span class="input-label">Имя*</span>
+        </label>
+        <label class="input-style">
+          <input class="input-field" type="tel" name="phone" placeholder=" " />
+          <span class="input-label">Телефон*</span>
+        </label>
+        <textarea
+          class="input-field textarea"
+          name="comment"
+          cols="30"
+          rows="10"
+          placeholder="Комментарий"
+        ></textarea>
+        <div>
+          <button type="submit" class="button">
+            <span class="appointment">Отправить</span>
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <h2>Контакты</h2>
+      <address>
+        <a class="address-link" href="https://goo.gl/maps/eZeJbiqzj9iB19fdA"
+          >ул. Васильковая, 7А, Киев, 08132</a
+        >
+        <br />
+        <a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+        <br />
+        <a class="address-link" href="barbershop@email.com">info@example.com</a>
+      </address>
+      <div class="working-time">
+        <b>Время работы</b>
+        <p>Ежедневно с 9:00 до 22:00</p>
+      </div>
+      <div class="copyright">
+        <p>Instagram</p>
+        <p>Youtube</p>
+        <p>&#169 Copyright 2020</p>
+      </div>
+    </footer>
+  </body>
 </html>
