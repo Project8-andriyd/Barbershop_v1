@@ -104,8 +104,28 @@ ul {
   background-color: #191c26;
   border: 0;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus-within > .input-field {
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.input-label {
+  position: absolute;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus-within > .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+  -webkit-transform: translate(-25px, -35px);
+          transform: translate(-25px, -35px);
+  color: #ffffff;
 }
 
 .button {

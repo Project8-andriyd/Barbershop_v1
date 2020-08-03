@@ -20,7 +20,24 @@
   border: 0;
   border-bottom: 1px solid $footer-rgba;
 
-  transition: border-color $animation;
+  transition: border-bottom $animation;
+
+  .input:focus-within > & {
+    outline: none;
+    border-bottom: 1px solid $main-2-color;
+  }
+}
+
+.input-label {
+  position: absolute;
+
+  transition: transform $animation, color $animation;
+
+  .input:focus-within > &,
+  .input-field:not(:placeholder-shown) + & {
+    transform: translate(-25px, -35px);
+    color: $main-2-color;
+  }
 }
 
 .button {
