@@ -56,20 +56,4 @@ ul {
   padding-left: 31px;
   margin: 0px auto 0px auto;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container {
-    width: 768px;
-    padding-top: 101px;
-    padding-bottom: 101px;
-    padding-right: 39px;
-    padding-left: 39px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
 /*# sourceMappingURL=main.css.map */
