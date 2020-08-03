@@ -1,45 +1,23 @@
 .online-appointment {
+  @extend %container;
+  background-color: $background-color;
+}
+
+.appointment-wrapper {
   background-color: $background-color;
 }
 
 .title {
   @extend %title-name;
   margin-bottom: 44px;
-}
 
-.input {
-  position: relative;
-  display: block;
-  margin-bottom: 44px;
-}
-
-.input-field {
-  width: 100%;
-  resize: none;
-  background-color: $background-color;
-  border: 0;
-  border-bottom: 1px solid $footer-rgba;
-
-  transition: border-bottom $animation;
-
-  .input:focus-within > & {
-    outline: none;
-    border-bottom: 1px solid $main-2-color;
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }
 
-.input-label {
-  position: absolute;
-
-  transition: transform $animation, color $animation;
-
-  .input:focus-within > &,
-  .input-field:not(:placeholder-shown) + & {
-    transform: translate(-25px, -35px);
-    color: $main-2-color;
+.appointment-main-info {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
-}
-
-.button {
-  @include button($background-color, $main-2-color);
 }

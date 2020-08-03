@@ -1,3 +1,41 @@
+.title {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.online-appointment {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  padding-right: 31px;
+  padding-left: 31px;
+  margin: 0px auto 0px auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .online-appointment {
+    width: 768px;
+    padding-top: 101px;
+    padding-bottom: 101px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .online-appointment {
+    width: 1280px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -50,50 +88,30 @@ ul {
   padding-left: 0;
 }
 
-.title {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-
-.container {
-  padding-top: 84px;
-  padding-bottom: 84px;
-  padding-right: 31px;
-  padding-left: 31px;
-  margin: 0px auto 0px auto;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container {
-    width: 768px;
-    padding-top: 101px;
-    padding-bottom: 101px;
-    padding-right: 39px;
-    padding-left: 39px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 55px;
-    padding-left: 55px;
-  }
-}
-
 .online-appointment {
+  background-color: #191c26;
+}
+
+.appointment-wrapper {
   background-color: #191c26;
 }
 
 .title {
   margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .input {
@@ -102,9 +120,26 @@ ul {
   margin-bottom: 44px;
 }
 
+@media screen and (min-width: 768px) {
+  .input {
+    width: calc(100% - 108px);
+  }
+}
+
+form > .input {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .input:first-child {
+    margin-right: 30px;
+  }
+}
+
 .input-field {
   width: 100%;
   resize: none;
+  color: #9da4bd;
   background-color: #191c26;
   border: 0;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -119,6 +154,13 @@ ul {
 
 .input-label {
   position: absolute;
+  left: 0px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -127,9 +169,15 @@ ul {
 
 .input:focus-within > .input-label,
 .input-field:not(:placeholder-shown) + .input-label {
-  -webkit-transform: translate(-25px, -35px);
-          transform: translate(-25px, -35px);
+  -webkit-transform: translate(0, -25px);
+          transform: translate(0, -25px);
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .appointment-button {
+    text-align: center;
+  }
 }
 
 .button {
