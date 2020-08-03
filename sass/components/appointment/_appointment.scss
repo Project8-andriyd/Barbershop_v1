@@ -4,20 +4,13 @@
 
 .title {
   @extend %title-name;
+  margin-bottom: 44px;
 }
 
-.input-field {
-  margin-top: 44px;
-  background-color: $background-color;
-  border: transparent;
-  border-bottom: 1px solid $main-2-color;
-}
-
-.label-style {
+.input {
   position: relative;
-  color: $main-2-color;
-
   display: block;
+  margin-bottom: 44px;
 }
 
 .button {

@@ -88,17 +88,14 @@ ul {
   background-color: #191c26;
 }
 
-.input-field {
-  margin-top: 44px;
-  background-color: #191c26;
-  border: transparent;
-  border-bottom: 1px solid #ffffff;
+.title {
+  margin-bottom: 44px;
 }
 
-.label-style {
+.input {
   position: relative;
-  color: #ffffff;
   display: block;
+  margin-bottom: 44px;
 }
 
 .button {
