@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop_v1</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="">
+                <a href="#" class="logo">
                     <picture>
                         <source
                             srcset="
@@ -42,23 +42,25 @@
                     </svg>
                 </button>
                 <nav  class="menu-container" id="menu-container" data-menu>
-                    <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги и цены</a></li>
-                        <li><a href="#">Мастера</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#">О нас</a></li>
+                        <li class="nav-item"><a href="#">Услуги и цены</a></li>
+                        <li class="nav-item"><a href="#">Мастера</a></li>
+                        <li class="nav-item"><a href="#contacts">Контакты</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                        <li><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
+
+                    <ul class="contacts-list">
+                        <li class="contacts-item"><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+                        <li class="contacts-item border"><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
                     </ul>
+
+                    <aside>
+                        <ul class="social-list">
+                            <li class="social-item"><span class="line"></span><a href="#"> Instagram</a></li>
+                            <li class="social-item"><a href="#">Youtube</a></li>
+                        </ul>
+                    </aside>
                 </nav>
-                <aside>
-                    <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Youtube</a></li>
-                    </ul>
-                </aside>
             </div>
 
         </div>
