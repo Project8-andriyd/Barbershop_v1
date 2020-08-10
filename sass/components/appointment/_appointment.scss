@@ -1,0 +1,23 @@
+.online-appointment {
+  @extend %container;
+  background-color: $background-color;
+}
+
+.appointment-wrapper {
+  background-color: $background-color;
+}
+
+.title {
+  @extend %title-name;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.appointment-main-info {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
